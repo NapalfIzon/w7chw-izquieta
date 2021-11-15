@@ -2,7 +2,7 @@ import axios from "axios";
 import jwtDecode from "jwt-decode";
 import { registerUserAction } from "../actions/actionCreators";
 
-const registerUserThunk = (user) => async (dispatch) => {
+export const registerUserThunk = (user) => async (dispatch) => {
   const response = await axios.post(
     process.env.REACT_APP_API_ENDPOINT + "/users/register",
     user
@@ -15,4 +15,4 @@ const registerUserThunk = (user) => async (dispatch) => {
   } // TODO preguntar por status diferentes al 201 (ya que está designado así al crear al usuario)
 };
 
-export default registerUserThunk;
+export const loginUserThunk = (user) => async (dispatch) => {};
