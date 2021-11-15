@@ -15,4 +15,6 @@ const registerUserThunk = (user) => async (dispatch) => {
   } // TODO preguntar por status diferentes al 201 (ya que está designado así al crear al usuario)
 };
 
-export default registerUserThunk;
+const loginUserThunk = (user) => async (dispatch) => {};
+
+export default { registerUserThunk, loginUserThunk };
