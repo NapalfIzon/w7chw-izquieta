@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import loginUserThunk from "../redux/thunk/userThunk";
+import { loginUserThunk } from "../redux/thunk/userThunk";
 
 const useUser = () => {
   const user = useSelector(({ user }) => user);
